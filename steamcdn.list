@@ -1,7 +1,7 @@
 DOMAIN-SUFFIX,api.steampowered.com
 DOMAIN-SUFFIX,*.cm.steampowered.com
 DOMAIN-SUFFIX,*.steamserver.net
-DOMAIN-SUFFIX,*.steamcontent.com
+DOMAIN-SUFFIX,steamcontent.com
 IP-CIDR,103.10.124.0/24,no-resolve
 IP-CIDR,103.10.125.0/24,no-resolve
 IP-CIDR,103.28.54.0/24,no-resolve
