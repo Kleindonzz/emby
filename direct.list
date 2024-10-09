@@ -3,3 +3,4 @@ DOMAIN-SUFFIX,kleindonzz.online
 DOMAIN-SUFFIX,kleindonzz.top
 PROCESS-NAME,xunyou
 IP-CIDR,52.40.62.110/32
+IP-CIDR,127.0.0.1/32
