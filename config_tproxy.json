@@ -76,8 +76,6 @@
     { "tag": "🎮 PS游戏平台", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "♻️ 香港自动", "♻️ 日本自动", "♻️ 新加坡自动", "♻️ 美国自动", "♻️ 韩国自动", "🐸 手动切换","{all}"] },
     { "tag": "🎮 Xbox游戏平台", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "♻️ 香港自动", "♻️ 日本自动", "♻️ 新加坡自动", "♻️ 美国自动", "♻️ 韩国自动", "🐸 手动切换","{all}"] },
     { "tag": "🎮 NS游戏平台", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "♻️ 香港自动", "♻️ 日本自动", "♻️ 新加坡自动", "♻️ 美国自动", "♻️ 韩国自动", "🐸 手动切换","{all}"] },
-    { "tag": "❤️ Emby公益服", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "♻️ 香港自动", "♻️ 日本自动", "♻️ 新加坡自动", "♻️ 美国自动", "♻️ 韩国自动", "🐸 手动切换","{all}"] },
-    { "tag": "🍃 广告过滤", "type": "selector", "outbounds": ["🎯 全球直连"] },
     { "tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🎯 全球直连","{all}"] },
     { "tag": "♻️ 香港自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["(?=.*(香港|HK|Hong Kong|🇭🇰|HongKong))^((?!(深港|US|家宽|游戏|剩余|流量|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x)).)*$"] }] }, "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 }
     { "tag": "♻️ 日本自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))^((?!(家宽|游戏|剩余|流量|2.0|2倍|2x|3.0|3倍|3x|4.0|4倍|4x)).)*$"] }] }, "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 }
@@ -99,7 +97,7 @@
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
       { "rule_set": "banadobe", "outbound": "🍃 广告过滤" },
-      { "rule_set": ["geosite-private", "geoip-private", "direct1"], "outbound": "🎯 全球直连" },
+      { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
       { "rule_set": "geosite-chat", "outbound": "🤖 OpenAI" },
       { "rule_set": "geosite-github", "outbound": "👨‍💻 Github" },
       { "rule_set": "geosite-youtube", "outbound": "📹 YouTube" },
@@ -109,7 +107,6 @@
       { "rule_set": "playstation", "outbound": "🎮 PS游戏平台" },
       { "rule_set": "nintendo", "outbound": "🎮 NS游戏平台" },
       { "rule_set": "xbox", "outbound": "🎮 Xbox游戏平台" },
-      { "rule_set": "EmbyFree", "outbound": "❤️ Emby公益服" },
       { "rule_set": "geosite-onedrive", "outbound": "🐬 OneDrive" }, 
       { "rule_set": "geosite-microsoft", "outbound": "🪟 Microsoft" }, 
       { "rule_set": ["geoip-google", "geosite-google"], "outbound": "🍀 Google" },
@@ -117,7 +114,7 @@
       { "rule_set": ["geoip-apple", "geosite-apple"], "outbound": "🍏 Apple" },
       { "rule_set": ["geoip-netflix", "geosite-netflix"], "outbound": "🎥 Netflix" },
       { "rule_set": ["geoip-telegram", "geosite-telegram"], "outbound": "📲 Telegram" },
-      { "rule_set": ["geosite-geolocation-!cn","proxy1"] "outbound": "🚀 节点选择" },
+      { "rule_set": ["geosite-geolocation-!cn"] "outbound": "🚀 节点选择" },
       { "rule_set": ["geoip-cn", "geosite-cn"], "outbound": "🎯 全球直连" }
     ],
     
@@ -141,10 +138,6 @@
       { "tag": "geoip-apple", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geoip-private", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs", "download_detour": "🎯 全球直连" },
-      { "tag": "EmbyFree", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/Kleindonzz/emby/refs/heads/main/emby.json", "download_detour": "🎯 全球直连" },
-      { "tag": "direct1", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/Kleindonzz/emby/refs/heads/main/direct.json", "download_detour": "🎯 全球直连" },
-      { "tag": "proxy1", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/Kleindonzz/emby/refs/heads/main/proxy.json", "download_detour": "🎯 全球直连" },
-      { "tag": "banadobe", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/Kleindonzz/emby/refs/heads/main/banadobe.json", "download_detour": "🎯 全球直连" },
       { "tag": "epicgames", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/epicgames.srs", "download_detour": "🎯 全球直连" },
       { "tag": "origin", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/origin.srs", "download_detour": "🎯 全球直连" },
       { "tag": "playstation", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/playstation.srs", "download_detour": "🎯 全球直连" },
