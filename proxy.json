@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "test-ipv6.com",
+		"stream-link.online",
+		"stream-link.org",
+		"mini4k.io",
+		"mini4k.com"
+      ]
+    }
+  ]
+}
