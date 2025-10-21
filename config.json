@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "udp", "server": "192.168.1.248"},
+      {"tag": "local", "type": "udp", "server": "116.116.116.116"},
       {"tag": "public", "type": "udp", "server": "192.168.1.248", "domain_resolver": "local"},
       {"tag": "foreign", "type": "https", "server": "8.8.8.8", "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
@@ -17,8 +17,8 @@
     ],
     "final": "foreign",
     "strategy": "prefer_ipv6",
-    "independent_cache": true,
-    "reverse_mapping": true
+    "independent_cache": false,
+    "reverse_mapping": false
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇰🇷 韩国自动", "🐸 手动选择", "{all}"]},
