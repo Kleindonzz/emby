@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "rules": [
     {
       "domain_suffix": [
@@ -8,8 +8,11 @@
 		"stream-link.org",
 		"emby.misakaf.org",
 		"mini4k.io",
+		"positiverecords.ru",
+		"rutracker.org",
 		"mini4k.com"
       ]
     }
   ]
 }
+
