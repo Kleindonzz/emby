@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "rules": [
     {
       "domain_suffix": [
@@ -133,8 +133,11 @@
 		"stream2.misakaf.org",
 		"stream3.misakaf.org",
 		"stream4.misakaf.org",
-		"aca.misakaf.org"
+		"aca.misakaf.org",
+		"313445.xyz",
+		"emby.wtf"
       ]
     }
   ]
 }
+
