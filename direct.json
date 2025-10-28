@@ -1,12 +1,12 @@
 {
-  "version": 1,
+  "version": 2,
   "rules": [
     {
       "domain_suffix": [
-        "kleindonzz.cn",
-        "time.is"
+        "kleindonzz.cn"
       ]
     }
   ]
 }
+
 
