@@ -3,12 +3,10 @@
   "rules": [
     {
       "domain_suffix": [
-        "kleindonzz.site",
-        "kleindonzz.online",
-        "kleindonzz.top",
-        "kleindonzz.us.kg",
+        "kleindonzz.cn",
         "time.is"
       ]
     }
   ]
 }
+
