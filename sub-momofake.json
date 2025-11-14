@@ -28,7 +28,7 @@
     {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
     {"tag": "🎥 Netflix", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
     {"tag": "🎥 emby", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
-    {"tag": "🍀 Adobe", "type": "selector", "outbounds": ["block", "🐸 手动选择", "🎯 全球直连", "{[]}"]},
+    {"tag": "🍀 Adobe", "type": "selector", "outbounds": ["block", "🐸 手动选择", "🎯 全球直连", "all"]},
     {"tag": "🎞 Adobe", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动",  "🇰🇷 韩国自动", "🇨🇳 台湾自动", "🐸 手动选择", "🎯 全球直连", "block"]},
     {"tag": "💶 PayPal", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
     {"tag": "🎮 Epic Game", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🐸 手动选择"]},
