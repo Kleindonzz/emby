@@ -5,3 +5,4 @@ IP-CIDR,127.0.0.1/32,no-resolve
 #DOMAIN-SUFFIX,appstorrent.ru
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,bjdekk.cn
+IP-CIDR,149.30.255.81/32,no-resolve
